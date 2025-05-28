@@ -1,4 +1,4 @@
-# 🎬 Moodflix — Movie App with React + Vite
+# 🎬 MovieSearch — Movie App with React + Vite
 
 Build step by step with [JavaScript Mastery](https://youtube.com/c/JavaScriptMastery) tutorial. Learn how to create modern, responsive apps with React, Appwrite, and TailwindCSS.
 
@@ -6,13 +6,13 @@ Build step by step with [JavaScript Mastery](https://youtube.com/c/JavaScriptMas
 
 ## 📋 Table of Contents
 
-- 🤖 Introduction  
-- ⚙️ Tech Stack  
-- 🔋 Features  
-- 🤸 Quick Start  
-- 🕸️ Snippets  
-- 🔗 Assets  
-- 🚀 More  
+- 🤖 Introduction
+- ⚙️ Tech Stack
+- 🔋 Features
+- 🤸 Quick Start
+- 🕸️ Snippets
+- 🔗 Assets
+- 🚀 More
 
 ---
 
@@ -37,12 +37,12 @@ Moodflix is a modern movie browsing app built with **React.js**, powered by **Ap
 
 ## 🔋 Features
 
-- 🔍 **Search Movies** — search any title instantly  
-- 🎞️ **Browse All Movies** — large collection to explore  
-- 📈 **Trending Algorithm** — fetches what's hot  
-- 📱 **Fully Responsive** — mobile-first design  
-- 🎨 **Modern UI/UX** — clean, dark-mode interface  
-- 🛠️ Code organized for reusability and scale  
+- 🔍 **Search Movies** — search any title instantly
+- 🎞️ **Browse All Movies** — large collection to explore
+- 📈 **Trending Algorithm** — fetches what's hot
+- 📱 **Fully Responsive** — mobile-first design
+- 🎨 **Modern UI/UX** — clean, dark-mode interface
+- 🛠️ Code organized for reusability and scale
 
 ---
 
@@ -50,9 +50,9 @@ Moodflix is a modern movie browsing app built with **React.js**, powered by **Ap
 
 ### Prerequisites
 
-- Git  
-- Node.js  
-- npm  
+- Git
+- Node.js
+- npm
 
 ### Install Project
 
