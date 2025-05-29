@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Search from "./components/search";
+import { useDebounce } from "react-use";
+import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
-import { useDebounce } from "react-use";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -77,8 +77,8 @@ const App = () => {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <li>
-                  <MovieCard key={movie.id} movie={movie} />
+                <li key={movie.id}>
+                  <MovieCard movie={movie} />
                 </li>
               ))}
             </ul>
