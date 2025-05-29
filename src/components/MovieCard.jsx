@@ -3,12 +3,12 @@ import React from "react";
 const MovieCard = ({
   movie: { title, vote_average, poster_path, release_date, original_language },
 }) => {
-  const imgBaseUrl = "https://image.tmdb.org/t/p/w500/";
+  const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500/";
 
   return (
     <div className='movie-card'>
       <img
-        src={poster_path ? imgBaseUrl + poster_path : "/no-movie.png"}
+        src={poster_path ? IMAGE_BASE_URL + poster_path : "/no-movie.png"}
         alt={title}
         title={title}
       />

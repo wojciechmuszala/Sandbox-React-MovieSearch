@@ -13,13 +13,13 @@ const App = () => {
 
   useDebounce(() => setDebouncedSearchState(searchTerm), 1000, [searchTerm]);
 
-  const API_BASE_URL = "https://api.themoviedb.org/3";
-  const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-  const API_OPTIONS = {
+  const TMBD_API_BASE_URL = "https://api.themoviedb.org/3";
+  const TMBD_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+  const TMBD_API_OPTIONS = {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization: `Bearer ${API_KEY}`,
+      Authorization: `Bearer ${TMBD_API_KEY}`,
     },
   };
 
@@ -28,10 +28,10 @@ const App = () => {
     setErrorMessage("");
     try {
       const endpoint = query
-        ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
-        : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+        ? `${TMBD_API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
+        : `${TMBD_API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
 
-      const response = await fetch(endpoint, API_OPTIONS);
+      const response = await fetch(endpoint, TMBD_API_OPTIONS);
 
       if (!response.ok) throw new Error("Failed to fetch movies");
 

@@ -1,7 +1,6 @@
 import React from "react";
 
 const Search = ({ searchTerm, setSearchTerm }) => {
-  console.log(searchTerm);
   return (
     <div className='search'>
       <div>
